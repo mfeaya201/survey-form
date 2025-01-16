@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Web Development Learning Survey</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title" class="title">Web Development Learning Survey</h1>
+      <p id="description" class="description">
+        Feedback on web development learning experiences
+      </p>
+    </header>
+    <form id="survey-form" method="POST">
+      <section class="input-section">
+        <div class="input-group">
+          <label id="name-label" for="name">Name</label>
+          <input id="name" type="text" placeholder="Enter your name" required />
+        </div>
+        <div class="input-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <label id="number-label" for="number">Age</label>
+          <input
+            id="number"
+            type="number"
+            min="16"
+            max="100"
+            placeholder="Enter your age"
+          />
+        </div>
+      </section>
+      <section class="select-section">
+        <label for="dropdown">What is your experience level</label>
+        <select id="dropdown" class="dropdown">
+          <option value="">Select one</option>
+          <option value="1">Beginner</option>
+          <option value="2">Intermediate</option>
+          <option value="3">Advanced</option>
+          <option value="4">Expert</option>
+        </select>
+      </section>
+      <fieldset class="radio-group">
+        <legend>Preferred learning method:</legend>
+        <label
+          ><input type="radio" name="learning-method" value="Self-taught" />
+          Self-taught</label
+        >
+        <label
+          ><input type="radio" name="learning-method" value="Online courses" />
+          Online courses</label
+        >
+        <label
+          ><input type="radio" name="learning-method" value="Bootcamp" />
+          Bootcamp</label
+        >
+        <label
+          ><input type="radio" name="learning-method" value="University" />
+          University / College</label
+        >
+      </fieldset>
+      <fieldset class="checkbox-group">
+        <legend>Which web technologies do you use or are interested in?</legend>
+        <label
+          ><input type="checkbox" name="web-tech" value="html" /> HTML</label
+        >
+        <label><input type="checkbox" name="web-tech" value="css" /> CSS</label>
+        <label
+          ><input type="checkbox" name="web-tech" value="javascript" />
+          JavaScript</label
+        >
+        <label
+          ><input type="checkbox" name="web-tech" value="react" /> React</label
+        >
+        <label
+          ><input type="checkbox" name="web-tech" value="nodejs" />
+          Node.js</label
+        >
+        <label
+          ><input type="checkbox" name="web-tech" value="mongodb" />
+          MongoDB</label
+        >
+        <label
+          ><input type="checkbox" name="web-tech" value="python" />
+          Python</label
+        >
+      </fieldset>
+      <section class="textarea-section">
+        <label for="comments">Any additional comments?</label>
+        <textarea
+          id="comments"
+          placeholder="Share your thoughts..."
+          rows="4"
+          cols="40"
+        ></textarea>
+      </section>
+      <button id="submit" type="submit" class="submit-button">Submit</button>
+    </form>
+  </body>
+</html>
